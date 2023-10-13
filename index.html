@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Todo app</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <img
+      src="./images/bg-desktop-dark.jpg"
+      alt="background desktop dark"
+      class="header-img"
+      srcset="
+        ./images/bg-mobile-dark.jpg   590w,
+        ./images/bg-desktop-dark.jpg 1400w
+      "
+    />
+    <div class="container">
+      <div class="container__header">
+        <h1>TODO</h1>
+        <button><img src="./images/icon-sun.svg" alt="sun icon" /></button>
+      </div>
+      <div class="container__input">
+        <div class="checkbox"></div>
+        <input
+          type="text"
+          class="container__input__textbox"
+          placeholder="Create a new todo..."
+        />
+      </div>
+      <div class="container__output">
+        <ul class="container__output__list">
+          <li
+            class="container__output__list__item container__output__list__item--done"
+          >
+            <div class="checkbox"></div>
+            <span>Hello World This is first todo!</span>
+          </li>
+          <li class="container__output__list__item">
+            <div class="checkbox"></div>
+            <span>Hello World This is first todo!</span>
+          </li>
+          <li class="container__output__list__item">
+            <div class="checkbox"></div>
+            <span>Hello World This is first todo!</span>
+          </li>
+          <li class="container__output__list__item">
+            <div class="checkbox"></div>
+            <span>Hello World This is first todo!</span>
+          </li>
+          <li class="container__output__list__item">
+            <div class="checkbox"></div>
+            <span>Hello World This is first todo!</span>
+          </li>
+        </ul>
+        <div class="container__output__filter">
+          <p>5 items left</p>
+          <ul class="container__output__filter__list">
+            <li
+              class="container__output__filter__list__item container__output__filter__list__item--active"
+            >
+              All
+            </li>
+            <li class="container__output__filter__list__item">Active</li>
+            <li class="container__output__filter__list__item">Completed</li>
+          </ul>
+          <button class="container__output__filter__clear">
+            Clear Completed
+          </button>
+        </div>
+        <ul class="container__output__filter__list--mini">
+          <li
+            class="container__output__filter__list__item container__output__filter__list__item--active"
+          >
+            All
+          </li>
+          <li class="container__output__filter__list__item">Active</li>
+          <li class="container__output__filter__list__item">Completed</li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
